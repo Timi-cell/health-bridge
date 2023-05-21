@@ -14,13 +14,14 @@ html {
 input {
   font-family: "Open Sans", sans-serif;
   outline: none;
-  border: none;
+  border: none; 
 }
 button {
   outline: none;
   font-family: "Open Sans", sans-serif;
   border: none;
   background-color: red;
+  font-size: 2rem;
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
