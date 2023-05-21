@@ -9,7 +9,7 @@ const Contact = () => {
         <form>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Message" />
+          <textarea type="text" placeholder="Message" id="message" />
           {/* <input type="text" placeholder="name" /> */}
           <button type="submit">Send</button>
         </form>

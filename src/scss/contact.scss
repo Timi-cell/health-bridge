@@ -6,15 +6,23 @@
   padding: 1.5rem;
   @include partial.flex($dir: column, $justify: center, $gap: 2rem);
   .contact-form {
-    input {
+    input,
+    textarea {
       display: block;
       margin-top: 2rem;
       width: 50rem;
       border: 0.1px solid red;
-      padding: 1rem; font-size: 1.8rem;
+      padding: 1rem;
+      font-size: 1.8rem;
+    }
+    #message {
+      width: 100%;
+      resize: none;
+      height: 15rem;
     }
     button {
       margin-top: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 }
