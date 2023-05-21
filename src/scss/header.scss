@@ -1,0 +1,55 @@
+@use "../scss/partial";
+
+.header {
+  color: #fff;
+  @include partial.flex;
+  flex-wrap: nowrap;
+  padding: 1.5rem;
+  ul {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+    li {
+      color: red;
+      padding: 1rem;
+      transition: 0.2s ease;
+    }
+  }
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header {
+    flex-wrap: wrap;
+    .icon {
+      display: block;
+    }
+    .logo {
+      font-size: 3.5rem;
+    }
+    .header-content {
+      display: none;
+      font-size: 1.8rem !important;
+    }
+  }
+  .head {
+    @include partial.flex;
+    flex-basis: 100%;
+  }
+  .mob {
+    display: block !important;
+    height: 0;
+    overflow: hidden;
+    text-align: right;
+    flex-grow: 2;
+    font-size: 1.8rem;
+    #last {
+      padding: 1.5rem 1rem;
+    }
+  }
+  .showMob {
+    height: 100%;
+  }
+}

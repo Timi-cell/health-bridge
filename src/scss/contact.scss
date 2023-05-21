@@ -1,0 +1,62 @@
+@use "../scss/partial";
+.contact {
+  h2 {
+    font-size: 2.5rem;
+  }
+  padding: 1.5rem;
+  @include partial.flex($dir: column, $justify: center, $gap: 2rem);
+  .contact-form {
+    input {
+      display: block;
+      margin-top: 2rem;
+      width: 50rem;
+      border: 0.1px solid red;
+      padding: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .contact {
+    // @include partial.flex($dir: column);
+    .contact-form {
+      input {
+        width: 40rem;
+        // width: 20rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 435px) {
+  .contact {
+    // @include partial.flex($dir: column);
+    .contact-form {
+      input {
+        width: 30rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 336px) {
+  .contact {
+    // @include partial.flex($dir: column);
+    .contact-form {
+      input {
+        width: 25rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .contact {
+    // @include partial.flex($dir: column);
+    .contact-form {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

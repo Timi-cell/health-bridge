@@ -1,0 +1,26 @@
+.home {
+  background-image: url("../home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  color: #fff;
+  height: max-content;
+  margin-top: 2rem;
+  .home-content {
+    padding: 1.5rem;
+    h2 {
+      font-size: 5rem;
+      padding: 5rem 0 3.5rem 0;
+      width: 50%;
+    }
+    .button {
+      color: #fff;
+      background-color: red;
+      padding: 1.5rem;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

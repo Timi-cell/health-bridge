@@ -1,0 +1,29 @@
+@use "../scss/partial";
+
+.cta {
+  padding: 1.5rem;
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .card-cta {
+    text-align: center;
+    @include partial.flex($dir: column);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .card-content {
+      // width: 50%;
+      @include partial.flex($dir: column, $gap: 2rem);
+      padding: 2rem;
+      transition: 0.3s;
+      color: red;
+    }
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  button {
+    font-size: 2rem;
+  }
+}

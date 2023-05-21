@@ -1,0 +1,53 @@
+@use "../scss/partial";
+
+.services {
+  margin: 3rem 0;
+  text-align: center;
+  h2 {
+    color: red;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  .services-block {
+    @include partial.flex($gap: 0);
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    .service {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      width: 50%;
+      height: 40rem;
+      img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        top: 50%;
+        font-size: 2rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 0.5rem;
+        width: 100%;
+        background-color: #00000065;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .services {
+    .services-block {
+      @include partial.flex($dir: column, $gap: 0);
+      .service {
+        width: 100%;
+        height: 45rem;
+        img {
+          height: 45rem;
+        }
+      }
+    }
+  }
+}
