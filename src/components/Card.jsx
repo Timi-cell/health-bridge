@@ -5,8 +5,7 @@ const Card = ({ children, icon, text }) => {
   return (
     <div className="card">
       {icon}
-      <h1>Health•Bridge</h1>
-      <h2>{text}</h2>
+      <h1>{text}</h1>
       {children}
     </div>
   );

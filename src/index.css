@@ -79,7 +79,8 @@ h1 {
   p {
     font-size: 1.7rem !important;
   }
-  input {
-    font-size: 1.7rem !important;
+  input,
+  textarea {
+    font-size: 1.6rem !important;
   }
 }

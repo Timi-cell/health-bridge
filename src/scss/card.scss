@@ -24,8 +24,8 @@
   top: 50%;
   width: 35rem;
   transform: translate(-50%, -50%);
-  h2 {
-    font-size: 2rem;
+  h1 {
+    font-size: 2.5rem;
     color: rgb(77, 0, 0)
   }
   input[type="email"],
@@ -92,7 +92,7 @@
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
-    h2 {
+    h1 {
       font-size: 2rem !important;
     }
     input {
