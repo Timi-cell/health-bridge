@@ -1,7 +1,7 @@
 @use "../scss/partial";
 
 .cta {
-  @include partial.flex($justify: center, $dir: row-reverse);
+  @include partial.flex($justify: center, $dir: row-reverse, $gap: 2rem);
   .image {
     width: 50%;
   }
@@ -15,18 +15,21 @@
   }
   p {
     font-size: 2rem;
+    margin-top: 1.7rem;
   }
   .card-cta {
     width: 50%;
-    text-align: center;
-    @include partial.flex($dir: column);
+    text-align: left;
+    padding-left: 3rem;
+    // @include partial.flex($dir: column);
     .card-content {
-      @include partial.flex($dir: column, $gap: 2rem);
+      // @include partial.flex($dir: column, $gap: 2rem);
       padding: 2rem;
     }
   }
   button {
     font-size: 1.75rem;
+    margin-top: 1.7rem;
   }
 }
 
@@ -35,6 +38,7 @@
     @include partial.flex($dir: column, $justify: center);
     .card-cta {
       width: 100%;
+      padding-left: 1rem;
     }
     .image {
       width: 100%;

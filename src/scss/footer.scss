@@ -1,7 +1,8 @@
 @use "../scss/partial";
 
 .footer {
-  margin: 3rem 0 1.5rem 0;
+  // margin: 3rem 0 1.5rem 0;
+  margin-bottom: 1.5rem;
   .footer-content {
     .icons {
       @include partial.flex($gap: 5rem);
@@ -24,7 +25,7 @@
   .footer {
     .footer-content {
       @include partial.flex($dir: column, $gap: 2rem);
-      .icons{
+      .icons {
         gap: 3.5rem;
       }
     }
