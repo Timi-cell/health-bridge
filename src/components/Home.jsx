@@ -15,8 +15,7 @@ const Home = () => {
         <div className="text">
           <h2>BRIDGING THE GAP OF HEALTHCARE BETWEEN FAMILIES</h2>
           <p>
-            It doesn't matter where you are, Connect with your family back home
-            and unlock health-care services for them
+            It doesn't matter where you are, Connect with your family back home in Nigeria and unlock health-care services for them
           </p>
           <Link to="/signup">
             <button className="button">GET STARTED &rarr;</button>
