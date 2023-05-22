@@ -7,10 +7,9 @@ const Contact = () => {
       <h2>Contact Us At Health Bridge</h2>
       <div className="contact-form">
         <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea type="text" placeholder="Message" id="message" />
-          {/* <input type="text" placeholder="name" /> */}
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required/>
+          <textarea type="text" placeholder="Message" id="message"  required/>
           <button type="submit">Send</button>
         </form>
       </div>

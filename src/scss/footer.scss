@@ -1,11 +1,32 @@
 @use "../scss/partial";
 
 .footer {
-  @include partial.flex;
-  padding: 1.5rem;
-  color: red;
   margin: 3rem 0 1.5rem 0;
-  p {
-    font-size: 1.8rem;
+  .footer-content {
+    .icons {
+      @include partial.flex($gap: 5rem);
+    }
+    @include partial.flex;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    .footer-content {
+      .icons {
+        gap: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer {
+    .footer-content {
+      @include partial.flex($dir: column, $gap: 2rem);
+      .icons{
+        gap: 3.5rem;
+      }
+    }
   }
 }

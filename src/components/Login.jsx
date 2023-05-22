@@ -14,14 +14,13 @@ const loginForm = () => {
     <div>
       <form>
         <input type="email" placeholder="Email" required name="email" />
-        <div className="password">
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-        </div>
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
 
         <p id="forgot">Forgot Password?</p>
 
@@ -31,11 +30,11 @@ const loginForm = () => {
       </form>
       <span>
         <Link to="/">
-          <p className="redText">Home</p>
+          <p>Home</p>
         </Link>
         <p>&nbsp;Don't have an account? &rarr;</p>
         <Link to="/signup">
-          <p className="redText">Signup</p>
+          <p>Signup</p>
         </Link>
       </span>
     </div>

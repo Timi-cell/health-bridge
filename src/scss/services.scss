@@ -4,48 +4,48 @@
   margin: 3rem 0;
   text-align: center;
   h2 {
-    color: red;
     font-size: 2.5rem;
     text-transform: uppercase;
   }
   .services-block {
-    @include partial.flex($gap: 0);
+    @include partial.flex($gap: 2rem, $justify: space-around);
     flex-wrap: wrap;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
     .service {
-      position: relative;
-      color: #fff;
       text-align: center;
-      width: 50%;
-      height: 40rem;
-      img {
-        width: 100%;
-        height: 40rem;
-        object-fit: cover;
-      }
-      h3 {
-        position: absolute;
-        top: 50%;
+      @include partial.flex($dir: column);
+      width: 30%;
+      padding: 1rem 0;
+      p {
         font-size: 2rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
         padding: 1.5rem 0.5rem;
-        width: 100%;
-        background-color: #00000065;
+        line-height: 1.5;
+        // height: 50%;
       }
     }
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   .services {
     .services-block {
-      @include partial.flex($dir: column, $gap: 0);
+      .service {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .services {
+    .services-block {
+      @include partial.flex($dir: column, $gap: 1.5rem);
+
       .service {
         width: 100%;
-        height: 45rem;
-        img {
-          height: 45rem;
+        p{
+          font-size: 1.7rem;
         }
       }
     }

@@ -9,8 +9,8 @@ const CTA = () => {
         <div className="card-content">
           <h2>JOIN US TODAY AT HEALTH BRIDGE!</h2>
           <p>
-            Stay in touch with family members and stay updated about your health
-            status.
+            Stay in touch with family members and stay updated about your family health
+            status
           </p>
           <Link to="/signup">
             <button>Sign Up Now</button>

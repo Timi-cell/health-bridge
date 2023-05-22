@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,9 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #eee;
 }
 input,
 textarea {
@@ -29,6 +32,7 @@ button {
 }
 a {
   text-decoration: none;
+  cursor: default;
 }
 
 li {
@@ -38,7 +42,42 @@ li {
 h1 {
   font-size: 2.5rem;
   color: red;
+  font-weight: 700;
 }
 .redText {
   color: red;
+}
+
+#myBtn {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8rem; /* Place the button at the bottom of the page */
+  right: 2rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1.2rem; /* Some padding */
+  /* font-size: 2rem; */
+}
+
+#myBtn:focus {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.show {
+  display: block !important;
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2.3rem !important;
+  }
+  button {
+    font-size: 1.7rem !important;
+  }
+  p {
+    font-size: 1.75rem !important;
+  }
+  input {
+    font-size: 1.7rem !important;
+  }
 }

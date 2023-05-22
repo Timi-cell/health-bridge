@@ -6,42 +6,41 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 const icon = <AiOutlineUserAdd color="var(--grey)" size={45} />;
 
 const Signup = () => {
-  return <Card text="Signup" icon={icon} children={registerForm()} />;
+  return <Card text="Sign Up" icon={icon} children={registerForm()} />;
 };
 
 const registerForm = () => {
   return (
     <div className="children">
       <form>
-        <input type="text" placeholder="Username" name="name" required />
+        <input type="text" placeholder="Name" name="name" required />
         <input type="email" placeholder="Email" name="email" required />
-        <div className="password">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            required
-          />
-        </div>
-        <div className="password">
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            name="password2"
-            required
-          />
-        </div>
+
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          name="password2"
+          required
+        />
+
         <button type="submit" className="--btn --btn-primary">
-          Register
+          Sign Up
         </button>
       </form>
       <span>
         <Link to="/">
-          <p className="redText">Home</p>
+          <p>Home</p>
         </Link>
         <p>&nbsp; Already have an account? &rarr;</p>
         <Link to="/login">
-          <p className="redText">Login</p>
+          <p>Login</p>
         </Link>
       </span>
     </div>

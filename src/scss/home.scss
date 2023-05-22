@@ -1,26 +1,66 @@
 .home {
-  background-image: url("../home.jpg");
+  background-image: url("https://res.cloudinary.com/dzqaqbrng/image/upload/v1684618153/ani-kolleshi-7jjnJ-QA9fY-unsplash_qasnkg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 70rem;
   text-align: left;
   color: #fff;
-  height: max-content;
+  // height: 55rem;
   margin-top: 2rem;
+  // position: relative;
+  // img {
+  //   width: 100%;
+  // }
   .home-content {
     padding: 1.5rem;
-    h2 {
-      font-size: 5rem;
-      padding: 5rem 0 3.5rem 0;
-      width: 50%;
-    }
-    .button {
-      color: #fff;
-      background-color: red;
-      padding: 1.5rem;
-      font-size: 2rem;
-      border-radius: 0.5rem;
-      margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 100%;
+
+    .text {
+      line-height: 1.5;
+      margin: 20rem 0;
+      h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      width: 55%;
+
+      .button {
+        color: #fff;
+        background-color: red;
+        padding: 1.5rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        margin: 2rem 0;
+      }
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .home {
+    height: max-content !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home {
+    .home-content {
+      .text {
+        margin: 10rem 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 450px) {
+//   .home{
+//     position: static;
+//   }
+// }

@@ -17,7 +17,9 @@ const Header = () => {
         </div>
       </div>
       <ul className={`header-content mob ${isOpen ? "showMob" : ""}`}>
-        <li>Home</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <a href="#services">
           {" "}
           <li>Services</li>{" "}
